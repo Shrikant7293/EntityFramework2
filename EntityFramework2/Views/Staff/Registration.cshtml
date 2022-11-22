@@ -1,0 +1,24 @@
+﻿@model StaffViewModel;
+
+<form method="post" asp-action="Registration" asp-controller="Staff">
+
+	<label asp-for="@Model.Name"></label>
+	<input type="text" asp-for="@Model.Name" class="form-control" />
+	<span asp-validation-for="@Model.Name" class="text-danger"></span>
+
+	<br />
+
+	<label asp-for="@Model.Position"></label>
+	<input type="text" asp-for="@Model.Position" class="form-control" />
+	<span asp-validation-for="@Model.Position" class="text-danger"></span>
+
+	<br />
+
+	<label asp-for="@Model.Salary"></label>
+	<input type="text" asp-for="@Model.Salary" class="form-control" />
+	<span asp-validation-for="@Model.Salary" class="text-danger"></span>
+
+	<br /> 
+
+	<button class="btn btn-primary">Submit</button>
+</form>
